@@ -13,7 +13,7 @@ title: Le Wagon Middleman boilerplate
 <head>
   <meta charset="utf-8">
   <title>Airbnb home</title>
-  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Raleway:300,400,500,700">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Raleway:300,400,500,700">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/style.css">
@@ -46,7 +46,7 @@ title: Le Wagon Middleman boilerplate
 
       <div class="container">
         <div class="row">
-        <div class="text-center col-xs-12 col-sm-6 col-md-3" >
+          <div class="text-center col-xs-12 col-sm-6 col-md-3" >
             <%= image_tag "globe.png" %>
             <h2>Discover the world</h2>
             <p>The earth is your new home.</p>
@@ -123,6 +123,11 @@ title: Le Wagon Middleman boilerplate
 
 
 
+
+
+  <!-- Including Bootstrap JS (with its jQuery dependency) so that dynamic components work -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
 
   <script type="text/javascript">
@@ -144,9 +149,5 @@ title: Le Wagon Middleman boilerplate
     });
   </script>
 
-
-  <!-- Including Bootstrap JS (with its jQuery dependency) so that dynamic components work -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 </body>
 </html>
