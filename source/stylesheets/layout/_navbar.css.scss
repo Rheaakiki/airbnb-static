@@ -58,11 +58,12 @@
   color: white;
   font-size: 14px;
   border: 2px solid #D23333;
-}
-.navbar-wagon-button:hover {
-  color: white;
-  background: #D23333;
-  border-color: #ac2626;
+
+  &:hover {
+    color: white;
+    background: #D23333;
+    border-color: #ac2626;
+  }
 }
 
 /* Navbar search form */
@@ -94,9 +95,10 @@
   padding: 0 10px;
   font-size: 14px;
   outline: none;
-}
-.navbar-wagon-search-input:focus  {
-  border: 1px solid #CCCCCC;
+
+  &:focus  {
+    border: 1px solid #CCCCCC;
+  }
 }
 
 /* Navbar dropdown menu */
