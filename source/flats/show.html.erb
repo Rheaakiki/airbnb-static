@@ -1,0 +1,46 @@
+<% flat = data.flats[owner] %>
+
+<div class="banner" style="background-image: url('../images/background.jpg'); height: 30vh; margin-bottom: 30px"> </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-6 col-sm-offset-1">
+      <div class="header-flat-details">
+        <div class="header-flat-owner  text-center">
+          <div> <%= image_tag flat.owner_picture, class: "img-circle", width: "100px" %>
+            <p><%= flat.owner_name %></p>
+          </div>
+        </div>
+        <div class="flat-rhea">
+          <h3> <%= flat.summary %></h3>
+          <p><%= flat.city %></p>
+          <% flat.ratings.truncate.times do %>
+          <i class="fa fa-star" style="color: #ffb400"></i>
+          <% end %>
+          <% (5-flat.ratings.truncate).times do %>
+          <i class="fa fa-star" style="color: #cacccd"></i>
+          <% end %>
+        </div>
+
+      </div>
+    </div>
+
+
+  </div>
+</div>
+
+<style>
+    .header-flat-details{
+      display: flex;
+      align-items: center;
+    }
+
+    .header-flat-owner{
+      margin-right: 20px;
+    }
+
+    .flat-rhea h3{
+      margin-top: 0;
+    }
+
+</style>
